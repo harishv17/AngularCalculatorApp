@@ -16,10 +16,10 @@ function CalculatorCtrl(){
             this.resultValue = number1 - number2;
         }
         else if(this.selectedOperation === '*'){
-            this.resultValue = number1 - number2;
+            this.resultValue = number1 * number2;
         }
         else if(this.selectedOperation === '/'){
-            this.resultValue = number1 - number2;
+            this.resultValue = number1 / number2;
         }
     }
 }

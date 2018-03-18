@@ -12,7 +12,7 @@
         <input type="number" ng-model="ctrl.input1"></input>
         <span ng-bind="ctrl.selectedOperation">&160;</span>
         <input type="number" ng-model="ctrl.input2"></input>
-        <button ng-click="calculate()">=</button>
+        <button ng-click="ctrl.calculate()">=</button>
         <span ng-bind="ctrl.resultValue"></span>
 
         <p>Choose operation
@@ -21,7 +21,6 @@
             <button ng-click="ctrl.buttonClick('*')">*</button>
             <button ng-click="ctrl.buttonClick('/')">/</button>
         </p>
-        {{ctrl.input1}} {{ctrl.input2}}
     </div>
 </body>
 
