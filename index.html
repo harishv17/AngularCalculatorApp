@@ -10,15 +10,16 @@
     <h1>Calculator App</h1>
     <div ng-controller="CalculatorCtrl as ctrl">
         <input type="number" ng-model="ctrl.input1"></input>
-        <span></span>
+        <span ng-bind="ctrl.selectedOperation">&160;</span>
         <input type="number" ng-model="ctrl.input2"></input>
-        <button>=</button>
+        <button ng-click="calculate()">=</button>
+        <span ng-bind="ctrl.resultValue"></span>
 
         <p>Choose operation
-            <button >+</button>
-            <button >-</button>
-            <button >*</button>
-            <button >/</button>
+            <button ng-click="ctrl.buttonClick('+')">+</button>
+            <button ng-click="ctrl.buttonClick('-')">-</button>
+            <button ng-click="ctrl.buttonClick('*')">*</button>
+            <button ng-click="ctrl.buttonClick('/')">/</button>
         </p>
         {{ctrl.input1}} {{ctrl.input2}}
     </div>
