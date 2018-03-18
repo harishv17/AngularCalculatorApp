@@ -1,8 +1,6 @@
-var module = angular.module("myApp", []);
-module.controller("CalculatorCtrl", CalculatorCtrl);
+var app = angular.module("myApp", []);
+app.controller("CalculatorCtrl", CalculatorCtrl);
 
 function CalculatorCtrl(){
-    this.opration = function(op){
-        this.opration = op;
-    }
+    
 }
